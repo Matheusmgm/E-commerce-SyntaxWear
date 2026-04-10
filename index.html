@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyntaxWear - Sapatos de Alta Performance e Estilo</title>
     <!-- Links para os arquivos CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/components/header.css">
-    <link rel="stylesheet" href="assets/css/components/product-card.css">
-    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Cabeçalho da página: Logo, navegação principal e elementos de utilidade -->
@@ -18,7 +16,7 @@
         <div class="cabecalho__logo">
             <!-- Logo da loja -->
             <a href="/" aria-label="Página inicial da SyntaxWear">
-                <img src="assets/images/logo.png" alt="Logo SyntaxWear">
+                <span>SyntaxWear</span>
             </a>
         </div>
         <nav class="navegacao-principal" aria-label="Navegação principal do site">
@@ -32,8 +30,8 @@
         </nav>
         <div class="cabecalho__utilidades">
             <!-- Ícones de busca, carrinho, etc. -->
-            <a href="#" aria-label="Buscar produtos"><img src="assets/images/icon-search.png" alt="Ícone de busca"></a>
-            <a href="#" aria-label="Ver meu carrinho de compras"><img src="assets/images/icon-cart.png" alt="Ícone de carrinho"></a>
+            <a href="#" aria-label="Buscar produtos">[Buscar]</a>
+            <a href="#" aria-label="Ver meu carrinho de compras">[Carrinho]</a>
         </div>
     </header>
 
@@ -53,7 +51,7 @@
             <div class="grade-destaques">
                 <!-- Exemplo de item de destaque -->
                 <article class="item-destaque">
-                    <img src="assets/images/highlight-shoe-1.jpg" alt="Sapato em destaque: Tênis Esportivo X">
+                    <div>[Imagem do Sapato]</div>
                     <h3>Tênis Esportivo X</h3>
                     <p>Conforto e tecnologia para seus treinos.</p>
                     <a href="#" class="botao-secundario">Ver Detalhes</a>
@@ -85,8 +83,8 @@
             </ul>
         </nav>
         <div class="redes-sociais">
-            <a href="#" aria-label="Siga-nos no Instagram"><img src="assets/images/icon-instagram.png" alt="Instagram"></a>
-            <a href="#" aria-label="Siga-nos no Facebook"><img src="assets/images/icon-facebook.png" alt="Facebook"></a>
+            <a href="#" aria-label="Siga-nos no Instagram">[Instagram]</a>
+            <a href="#" aria-label="Siga-nos no Facebook">[Facebook]</a>
         </div>
     </footer>
 </body>

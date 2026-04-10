@@ -1,0 +1,8 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --white: #ffffff;
+    --light-grey: #f8f9fa;
+    --font-main: 'Arial', sans-serif;
+    --container-padding: 20px;
+}
