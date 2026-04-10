@@ -1,0 +1,16 @@
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px var(--container-padding);
+}
+
+.product-card {
+    border: 1px solid var(--light-grey);
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card__image {
+    margin-bottom: 15px;
+}

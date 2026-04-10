@@ -1,0 +1,41 @@
+h1, h2, h3 {
+    font-family: var(--font-main);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+}
+
+.btn-secondary {
+    border: 2px solid var(--secondary-color);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* Hero Section - Mobile First */
+.hero-section {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light-grey);
+    padding: var(--container-padding);
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+}

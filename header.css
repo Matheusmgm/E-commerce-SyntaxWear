@@ -1,0 +1,25 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px var(--container-padding);
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-grey);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-nav ul {
+    display: none; /* Escondido no mobile para futuro menu hamburguer */
+}
+
+@media (min-width: 768px) {
+    .main-nav ul {
+        display: flex;
+        gap: 20px;
+    }
+    .main-nav a:hover {
+        color: var(--primary-color);
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyntaxWear - Sapatos de Alta Performance e Estilo</title>
+    <!-- Links para os arquivos CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/product-card.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+</head>
+<body>
+    <!-- Cabeçalho da página: Logo, navegação principal e elementos de utilidade -->
+    <header class="main-header">
+        <div class="header__logo">
+            <!-- Logo da loja -->
+            <a href="/" aria-label="Página inicial da SyntaxWear">
+                <img src="assets/images/logo.png" alt="Logo SyntaxWear">
+            </a>
+        </div>
+        <nav class="main-nav" aria-label="Navegação principal do site">
+            <ul>
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="header__utility-nav">
+            <!-- Ícones de busca, carrinho, etc. -->
+            <a href="#" aria-label="Buscar produtos"><img src="assets/images/icon-search.png" alt="Ícone de busca"></a>
+            <a href="#" aria-label="Ver meu carrinho de compras"><img src="assets/images/icon-cart.png" alt="Ícone de carrinho"></a>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção Hero/Banner Principal -->
+        <section class="hero-section" aria-labelledby="hero-title">
+            <h1 id="hero-title">Sapatos de Alta Performance e Estilo para Cada Passo</h1>
+            <p>Descubra a nova coleção e eleve seu estilo.</p>
+            <a href="#" class="btn-primary">Compre Agora</a>
+            <!-- Imagem de fundo ou carrossel de banners aqui -->
+        </section>
+
+        <!-- Seção de Destaques (Produtos ou Promoções em evidência) -->
+        <section class="highlights-section" aria-labelledby="highlights-title">
+            <h2 id="highlights-title">Destaques da Semana</h2>
+            <div class="highlights__grid">
+                <!-- Exemplo de item de destaque -->
+                <article class="highlight-item">
+                    <img src="assets/images/highlight-shoe-1.jpg" alt="Sapato em destaque: Tênis Esportivo X">
+                    <h3>Tênis Esportivo X</h3>
+                    <p>Conforto e tecnologia para seus treinos.</p>
+                    <a href="#" class="btn-secondary">Ver Detalhes</a>
+                </article>
+                <!-- Mais itens de destaque aqui -->
+            </div>
+        </section>
+				
+
+        <!-- Seção de Grid de Produtos (Listagem principal) -->
+        <section class="products-grid-section" aria-labelledby="products-grid-title">
+            <h2 id="products-grid-title">Nossos Produtos</h2>
+            <div class="products-grid">
+                <!-- Cards de produtos serão inseridos aqui (ex: usando <article> para cada produto) -->
+                <!-- Exemplo de um card de produto: -->
+                <!-- <article class="product-card">...</article> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="main-footer">
+        <p>&copy; 2026 SyntaxWear. Todos os direitos reservados.</p>
+        <nav class="footer-nav" aria-label="Navegação secundária do rodapé">
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Trocas e Devoluções</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="#" aria-label="Siga-nos no Instagram"><img src="assets/images/icon-instagram.png" alt="Instagram"></a>
+            <a href="#" aria-label="Siga-nos no Facebook"><img src="assets/images/icon-facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.main-footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 40px var(--container-padding);
+    text-align: center;
+}
+
+.footer-nav ul {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
