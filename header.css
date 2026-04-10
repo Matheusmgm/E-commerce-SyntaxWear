@@ -1,4 +1,4 @@
-.main-header {
+.cabecalho-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,16 +10,16 @@
     z-index: 100;
 }
 
-.main-nav ul {
+.navegacao-principal ul {
     display: none; /* Escondido no mobile para futuro menu hamburguer */
 }
 
 @media (min-width: 768px) {
-    .main-nav ul {
+    .navegacao-principal ul {
         display: flex;
         gap: 20px;
     }
-    .main-nav a:hover {
+    .navegacao-principal a:hover {
         color: var(--primary-color);
     }
 }

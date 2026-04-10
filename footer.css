@@ -1,11 +1,11 @@
-.main-footer {
+.rodape-principal {
     background-color: var(--secondary-color);
     color: var(--white);
     padding: 40px var(--container-padding);
     text-align: center;
 }
 
-.footer-nav ul {
+.navegacao-rodape ul {
     margin: 20px 0;
     display: flex;
     justify-content: center;

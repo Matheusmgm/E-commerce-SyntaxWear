@@ -6,26 +6,40 @@ h1, h2, h3 {
 }
 
 /* Buttons */
-.btn-primary {
+.botao-primario, .botao-secundario {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botao-primario {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 12px 24px;
-    font-weight: bold;
     border-radius: 4px;
 }
 
-.btn-primary:hover {
+.botao-primario:hover {
     filter: brightness(1.1);
 }
 
-.btn-secondary {
+.botao-secundario {
+    background-color: transparent;
+    color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
     padding: 10px 20px;
-    font-weight: bold;
+}
+
+.botao-secundario:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
 }
 
 /* Hero Section - Mobile First */
-.hero-section {
+.secao-banner {
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -36,6 +50,6 @@ h1, h2, h3 {
     padding: var(--container-padding);
 }
 
-.hero-section h1 {
+.secao-banner h1 {
     font-size: 2rem;
 }
