@@ -1,45 +1,49 @@
 /* Tipografia Base */
-h1, h2, h3 {
-    font-family: var(--fonte-principal);
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
+h1,
+h2,
+h3 {
+	font-family: var(--fonte-principal);
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
 }
 
 /* Botões Globais */
-.botao-primario, .botao-secundario {
-    display: inline-block;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
+.botao-primario,
+.botao-secundario {
+	display: inline-block;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	font-weight: bold;
+	text-align: center;
 }
 
 .botao-primario {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 12px 24px;
-    border-radius: 4px;
+	background-color: var(--primary-color);
+	color: var(--white);
+	padding: 12px 24px;
+	border-radius: 4px;
 }
 
 .botao-primario:hover {
-    filter: brightness(1.1);
+	filter: brightness(1.1);
 }
 
 .botao-secundario {
-    background-color: transparent;
-    color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    padding: 10px 20px;
+	background-color: transparent;
+	color: var(--secondary-color);
+	border: 2px solid var(--secondary-color);
+	padding: 10px 20px;
 }
 
 .botao-secundario:hover {
-    background-color: var(--secondary-color);
-    color: var(--white);
+	background-color: var(--secondary-color);
+	color: var(--white);
 }
 
-body{
-    font-family: var(--fonte-principal);
-
+body {
+	font-family: var(--fonte-principal);
+	background-color: #FFFFFF;
+	color: #333333;
 }
