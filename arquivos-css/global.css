@@ -1,6 +1,6 @@
 /* Tipografia Base */
 h1, h2, h3 {
-    font-family: var(--font-main);
+    font-family: var(--fonte-principal);
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -37,4 +37,9 @@ h1, h2, h3 {
 .botao-secundario:hover {
     background-color: var(--secondary-color);
     color: var(--white);
+}
+
+body{
+    font-family: var(--fonte-principal);
+
 }
