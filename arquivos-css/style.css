@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px var(--container-padding);
-    background-color: var(--white);
+    background: var(--white);
     border-bottom: 1px solid var(--light-grey);
     position: sticky;
     top: 0;
@@ -13,8 +13,6 @@
 
 .cabecalho__logo {
     margin: 0;
-    font-size: inherit;
-    font-weight: normal;
 }
 
 .cabecalho__logo img {
@@ -24,7 +22,10 @@
 }
 
 .navegacao-principal ul {
-    display: none; /* Escondido no mobile para futuro menu hamburguer */
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .cabecalho__utilidades {
@@ -34,13 +35,12 @@
 }
 
 .cabecalho__utilidades .utilidade {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     width: 42px;
     height: 42px;
+    display: grid;
+    place-items: center;
     border-radius: 50%;
-    background-color: var(--light-grey);
+    background: var(--light-grey);
     color: var(--primary-color);
     text-decoration: none;
     font-size: 1.1rem;
@@ -56,7 +56,6 @@
     .navegacao-principal ul {
         display: flex;
         gap: 30px;
-        align-items: center;
     }
 
     .navegacao-principal a {
@@ -73,44 +72,47 @@
     }
 }
 
-/* Rodapé Principal */
+/* Rodapé */
 .rodape-principal {
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     color: var(--white);
     padding: 40px var(--container-padding);
     text-align: center;
 }
 
 .navegacao-rodape ul {
-    margin: 20px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
     font-size: 0.9rem;
-    flex-wrap: wrap;
 }
 
-/* Seção Banner / Hero */
+/* Banner */
 .secao-banner {
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--light-grey);
+    background: var(--light-grey);
     padding: var(--container-padding);
 }
 
 .secao-banner h2 {
     font-size: 2rem;
+    margin: 0 0 0.75rem;
 }
 
-/* Grade de Produtos e Itens */
+/* Produtos */
 .grade-produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 40px var(--container-padding);
 }
 
