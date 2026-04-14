@@ -11,16 +11,64 @@
     z-index: 100;
 }
 
+.cabecalho__logo {
+    margin: 0;
+    font-size: inherit;
+    font-weight: normal;
+}
+
+.cabecalho__logo img {
+    display: block;
+    max-height: 42px;
+    width: auto;
+}
+
 .navegacao-principal ul {
     display: none; /* Escondido no mobile para futuro menu hamburguer */
+}
+
+.cabecalho__utilidades {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.cabecalho__utilidades .utilidade {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--light-grey);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cabecalho__utilidades .utilidade:hover {
+    background-color: rgba(128, 0, 128, 0.08);
+    transform: translateY(-1px);
 }
 
 @media (min-width: 768px) {
     .navegacao-principal ul {
         display: flex;
-        gap: 20px;
+        gap: 30px;
+        align-items: center;
     }
-    .navegacao-principal a:hover {
+
+    .navegacao-principal a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        transition: color 0.2s ease;
+    }
+
+    .navegacao-principal a:hover,
+    .navegacao-principal li.active a {
         color: var(--primary-color);
     }
 }
@@ -54,7 +102,7 @@
     padding: var(--container-padding);
 }
 
-.secao-banner h1 {
+.secao-banner h2 {
     font-size: 2rem;
 }
 
