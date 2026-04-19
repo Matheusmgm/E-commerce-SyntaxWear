@@ -11,6 +11,7 @@
 body,
 h1,
 h2,
+h2,
 h3,
 h4,
 p,
@@ -22,6 +23,8 @@ dd {
 }
 
 /* Remove estilos de lista para elementos com atributo role='list' (acessibilidade) */
+ul,
+ol,
 ul[role='list'],
 ol[role='list'] {
 	list-style: none;
@@ -41,7 +44,9 @@ body {
 }
 
 /* Links que não possuem uma classe recebem um estilo de sublinhado mais inteligente */
-a:not([class]) {
+a {
+	text-decoration: none;
+	color: inherit;
 	text-decoration-skip-ink: auto;
 }
 
@@ -74,16 +79,4 @@ select {
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
-}
-
-/* Limpeza adicional para o projeto SyntaxWear */
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
 }
