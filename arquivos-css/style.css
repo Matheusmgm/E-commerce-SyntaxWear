@@ -175,9 +175,14 @@
 }
 
 .botao-primario {
-	background-color: var(--secondary-color);
-	color: var(--white);
-	border: 2px solid var(--secondary-color);
+	font-family: var(--fonte-principal);
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0%;
+	background-color: #FFFFFF;
+	color: #6329A2;
+	border-radius: 30px;
 }
 
 .botao-secundario {
