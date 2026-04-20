@@ -130,7 +130,8 @@
 
 /* Banner */
 .secao-banner {
-	min-height: 60vh;
+	width: 388px;
+	height: 76px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -141,8 +142,20 @@
 }
 
 .secao-banner h2 {
-	font-size: 2rem;
-	margin: 0 0 0.75rem;
+	font-size: 20px;
+	font-family: var(--fonte-principal);
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 8%;
+}
+
+.secao-banner p {
+	font-size: 24px;
+	font-family: var(--fonte-principal);
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 8%;
+	
 }
 
 .banner__botoes {
