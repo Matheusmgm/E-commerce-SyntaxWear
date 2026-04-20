@@ -167,9 +167,6 @@
 .botao-primario,
 .botao-secundario {
 	padding: 12px 28px;
-	border-radius: 4px;
-	font-weight: 600;
-	text-transform: uppercase;
 	transition: all 0.3s ease;
 	cursor: pointer;
 }
