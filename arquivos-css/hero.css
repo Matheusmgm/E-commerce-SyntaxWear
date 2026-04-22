@@ -1,66 +1,88 @@
+/* hero.css */
 .hero-banner {
-	position: relative;
-	background: url('../images/hero-banner.jpg') no-repeat center / cover;
+    background: url('../images/hero-banner.jpg') no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
 }
 
 .secao-banner {
-	min-height: 60vh;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: calc(var(--container-padding) + 40px) var(--container-padding) 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 6rem;
 }
 
 .hero-overlay {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	text-align: right;
-	color: var(--color-cinza);
+    color: #ffffff;
+    max-width: 360px;
+    text-align: center;
 }
 
-.hero-overlay #titulo-banner {
-	font-size: 20px;
-	font-family: var(--fonte-principal);
-	font-weight: 500;
-	line-height: 24px;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
-.hero-overlay p {
-	font-size: 24px;
-	font-family: var(--fonte-principal);
-	font-weight: 500;
-	line-height: 32px;
-	letter-spacing: 0.08em;
-	margin-top: 10px;
+.hero-title {
+    font-size: 1.87rem;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 3px;
 }
 
 .banner__botoes {
-	display: flex;
-	gap: 15px;
-	margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
 }
 
-.botao-primario,
+.btn {
+    font-size: 1.25rem;
+    width: 161px;
+    height: 48px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px 20px;
+    transition: background-color 0.3s, border 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+}
+
 .botao-secundario {
-	padding: 12px 28px;
-	transition: all 0.3s ease;
-	cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.botao-primario {
+    background-color: #ffffff;
+    color: #6329A2;
+}
+
+.btn:hover {
+    background-color: #6329A2;
+    color: #ffffff;
+    border-color: #6329A2;
 }
 
 @media (min-width: 768px) {
-	.navegacao-principal ul {
-		display: flex;
-		gap: 30px;
-	}
+    .navegacao-principal ul {
+        display: flex;
+        gap: 30px;
+    }
 
-	.navegacao-principal a {
-		color: var(--text-color);
-		text-decoration: none;
-		font-weight: 500;
-		letter-spacing: 0.02em;
-		transition: color 0.2s ease;
-	}
+    .navegacao-principal a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        transition: color 0.2s ease;
+    }
 }
