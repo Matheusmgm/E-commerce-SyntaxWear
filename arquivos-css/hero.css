@@ -7,15 +7,13 @@
 	padding: 24px 0 60px;
 }
 
-.hero-banner .secao-banner {
-	position: relative;
-	z-index: 1;
+.secao-banner {
 	min-height: 60vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	justify-content: center; /* Alinhamento vertical centralizado */
+	align-items: flex-end;   /* Alinhamento horizontal para a direita */
+	text-align: right;       /* Texto alinhado à direita */
 	color: var(--color-cinza);
 	padding: calc(var(--container-padding) + 40px) var(--container-padding) 80px;
 }
@@ -34,26 +32,10 @@
 		transition: color 0.2s ease;
 	}
 
-	.navegacao-principal a:hover,
-	.navegacao-principal li.active a {
-		color: var(--primary-color);
-	}
+
 }
 
-/* Banner */
-.secao-banner {
-	width: 388px;
-	height: 76px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background: transparent;
-	padding: calc(var(--container-padding) + 20px) var(--container-padding) 80px;
-}
-
-.secao-banner h2 {
+#titulo-banner {
 	font-size: 20px;
 	font-family: var(--fonte-principal);
 	font-weight: 500;
@@ -61,7 +43,7 @@
 	letter-spacing: 8%;
 }
 
-.secao-banner p {
+p {
 	font-size: 24px;
 	font-family: var(--fonte-principal);
 	font-weight: 500;
@@ -82,8 +64,3 @@
 	cursor: pointer;
 }
 
-.botao-primario:hover,
-.botao-secundario:hover {
-	opacity: 0.8;
-	transform: translateY(-2px);
-}
