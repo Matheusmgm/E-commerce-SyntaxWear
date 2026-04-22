@@ -4,16 +4,19 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 24px 0 60px;
+
 }
 
 .secao-banner {
 	min-height: 60vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center; /* Alinhamento vertical centralizado */
-	align-items: flex-end;   /* Alinhamento horizontal para a direita */
-	text-align: right;       /* Texto alinhado à direita */
+	justify-content: center;
+	/* Alinhamento vertical centralizado */
+	align-items: flex-end;
+	/* Alinhamento horizontal para a direita */
+	text-align: right;
+	/* Texto alinhado à direita */
 	color: var(--color-cinza);
 	padding: calc(var(--container-padding) + 40px) var(--container-padding) 80px;
 }
@@ -35,12 +38,18 @@
 
 }
 
-#titulo-banner {
-	font-size: 20px;
-	font-family: var(--fonte-principal);
-	font-weight: 500;
-	line-height: 24px;
-	letter-spacing: 8%;
+/* adicionando o secao banner de novo para correção de bugs */
+
+.secao-banner {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	/* Alinhamento vertical centralizado */
+	align-items: flex-end;
+	/* Alinhamento horizontal para a direita */
+	/* Texto alinhado à direita */
+	color: var(--color-cinza);
 }
 
 p {
@@ -50,6 +59,15 @@ p {
 	line-height: 32px;
 	letter-spacing: 8%;
 }
+
+#titulo-banner {
+	font-size: 20px;
+	font-family: var(--fonte-principal);
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 8%;
+}
+
 
 .banner__botoes {
 	display: flex;
@@ -63,4 +81,3 @@ p {
 	transition: all 0.3s ease;
 	cursor: pointer;
 }
-
