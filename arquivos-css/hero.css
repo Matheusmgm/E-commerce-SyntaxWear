@@ -1,24 +1,53 @@
 .hero-banner {
 	position: relative;
-	background-image: url('../images/hero-banner.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
+	background: url('../images/hero-banner.jpg') no-repeat center / cover;
 }
 
 .secao-banner {
 	min-height: 60vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	/* Alinhamento vertical centralizado */
-	align-items: flex-end;
-	/* Alinhamento horizontal para a direita */
-	text-align: right;
-	/* Texto alinhado à direita */
-	color: var(--color-cinza);
+	justify-content: flex-end;
+	align-items: center;
 	padding: calc(var(--container-padding) + 40px) var(--container-padding) 80px;
+}
+
+.hero-overlay {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	color: var(--color-cinza);
+}
+
+.hero-overlay #titulo-banner {
+	font-size: 20px;
+	font-family: var(--fonte-principal);
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.hero-overlay p {
+	font-size: 24px;
+	font-family: var(--fonte-principal);
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 0.08em;
+	margin-top: 10px;
+}
+
+.banner__botoes {
+	display: flex;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.botao-primario,
+.botao-secundario {
+	padding: 12px 28px;
+	transition: all 0.3s ease;
+	cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -34,50 +63,4 @@
 		letter-spacing: 0.02em;
 		transition: color 0.2s ease;
 	}
-
-
-}
-
-/* adicionando o secao banner de novo para correção de bugs */
-
-.secao-banner {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	/* Alinhamento vertical centralizado */
-	align-items: flex-end;
-	/* Alinhamento horizontal para a direita */
-	/* Texto alinhado à direita */
-	color: var(--color-cinza);
-}
-
-p {
-	font-size: 24px;
-	font-family: var(--fonte-principal);
-	font-weight: 500;
-	line-height: 32px;
-	letter-spacing: 8%;
-}
-
-#titulo-banner {
-	font-size: 20px;
-	font-family: var(--fonte-principal);
-	font-weight: 500;
-	line-height: 24px;
-	letter-spacing: 8%;
-}
-
-
-.banner__botoes {
-	display: flex;
-	gap: 15px;
-	margin-top: 20px;
-}
-
-.botao-primario,
-.botao-secundario {
-	padding: 12px 28px;
-	transition: all 0.3s ease;
-	cursor: pointer;
 }
