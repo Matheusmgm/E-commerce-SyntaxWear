@@ -20,10 +20,17 @@
 	align-items: center;
 }
 
+.categorias-link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: auto;
+	height: auto;
+}
 
 .categorias-nome {
-	font-size: 2.25rem;
-	margin-top: 10px;
+	margin: 0;
 	text-align: center;
 	font-weight: 400;
 	color: #FFFFFF;
