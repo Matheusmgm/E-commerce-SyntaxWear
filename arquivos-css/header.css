@@ -5,14 +5,13 @@
 	justify-content: space-between;
 	align-items: center;
 	background: rgba(255, 255, 255, 0.96);
-	width: 100%;
-	max-width: 1360px;
-	position: fixed;
+	width: calc(100% - 4rem);
+	max-width: 1320px;
 	top: 70px;
 	z-index: 999;
 	border-radius: 15px;
 	padding: 0.265rem 1.25rem;
-	left: 50% ;
+	left: 50%;
 	transform: translateX(-50%);
 	
 }
