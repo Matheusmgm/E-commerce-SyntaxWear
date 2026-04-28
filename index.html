@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="./arquivos-css/header.css">
 	<link rel="stylesheet" href="./arquivos-css/hero.css">
 	<link rel="stylesheet" href="./arquivos-css/style.css">
+	<link rel="stylesheet" href="./arquivos-css/footer.css">
 	<link rel="stylesheet" href="./arquivos-css/produto-categoria.css">
 	<link rel="stylesheet" href="./arquivos-css/produto-grid.css">
 </head>
@@ -110,17 +111,64 @@
 
 	<!-- Rodapé da página -->
 	<footer class="rodape-principal">
-		<p>&copy; 2026 SyntaxWear. Todos os direitos reservados.</p>
-		<nav class="navegacao-rodape" aria-label="Navegação secundária do rodapé">
-			<ul>
-				<li><a href="#">Política de Privacidade</a></li>
-				<li><a href="#">Termos de Uso</a></li>
-				<li><a href="#">Trocas e Devoluções</a></li>
-			</ul>
-		</nav>
-		<div class="redes-sociais">
-			<a href="#" aria-label="Siga-nos no Instagram">[Instagram]</a>
-			<a href="#" aria-label="Siga-nos no Facebook">[Facebook]</a>
+		<div class="rodape-conteudo">
+			<div class="rodape-topo">
+				<div class="rodape-newsletter">
+					<span class="rodape-title">Inscreva-se em nosso e-mail</span>
+					<form class="rodape-formulario" action="#" method="post">
+						<label class="sr-only" for="newsletter-email">E-mail</label>
+						<input id="newsletter-email" type="email" placeholder="email@email.com" required>
+					</form>
+					<span class="rodape-subtitle">Redes sociais</span>
+					<div class="rodape-redes">
+						<a href="#" class="social-icon instagram" aria-label="Instagram"></a>
+						<a href="#" class="social-icon whatsapp" aria-label="WhatsApp"></a>
+						<a href="#" class="social-icon tiktok" aria-label="TikTok"></a>
+						<a href="#" class="social-icon facebook" aria-label="Facebook"></a>
+					</div>
+				</div>
+				<div class="rodape-coluna">
+					<strong>Masculino</strong>
+					<ul>
+						<li><a href="#">Casual</a></li>
+						<li><a href="#">Esporte</a></li>
+						<li><a href="#">Moderno</a></li>
+						<li><a href="#">Futurista</a></li>
+					</ul>
+				</div>
+				<div class="rodape-coluna">
+					<strong>Feminino</strong>
+					<ul>
+						<li><a href="#">Casual</a></li>
+						<li><a href="#">Esporte</a></li>
+						<li><a href="#">Moderno</a></li>
+						<li><a href="#">Futurista</a></li>
+					</ul>
+				</div>
+				<div class="rodape-coluna">
+					<strong>Outlet</strong>
+					<ul>
+						<li><a href="#">Masculino</a></li>
+						<li><a href="#">Feminino</a></li>
+					</ul>
+				</div>
+				<div class="rodape-coluna">
+					<strong>Nossas lojas</strong>
+					<ul>
+						<li><a href="#">Loja física</a></li>
+						<li><a href="#">Loja online</a></li>
+					</ul>
+				</div>
+				<div class="rodape-coluna">
+					<strong>Sobre</strong>
+					<ul>
+						<li><a href="#">Quem somos</a></li>
+						<li><a href="#">Missão</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr class="rodape-separador">
+			<p class="rodape-credito">Copyright. All Rights Reserved</p>
 		</div>
 	</footer>
 </body>
