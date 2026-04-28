@@ -11,9 +11,12 @@
   background: var(--footer-bg);
   color: var(--footer-text);
   padding: 60px 24px 40px;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .rodape-conteudo {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
