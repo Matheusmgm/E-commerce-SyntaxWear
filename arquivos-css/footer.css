@@ -10,35 +10,35 @@
 .rodape-principal {
   background: var(--footer-bg);
   color: var(--footer-text);
-  padding: 60px 24px 40px;
+  box-sizing: border-box;
+  height: 335px;
+  padding: 40px 24px 24px;
   max-width: 1360px;
   margin: 40px auto 0;
 }
 
 .rodape-conteudo {
+  height: 100%;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  gap: 32px;
+  grid-template-rows: 1fr auto auto;
+  gap: 0;
+  grid-auto-flow: row;
 }
 
 .rodape-topo {
   display: grid;
-  grid-template-columns: minmax(240px, 1.4fr) repeat(5, minmax(140px, 1fr));
-  gap: 32px;
+  grid-template-columns: minmax(240px, 1.3fr) repeat(5, minmax(120px, 1fr));
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 28px;
 }
 
-.rodape-newsletter,
-.rodape-redes {
+.rodape-newsletter {
   display: grid;
-  gap: 20px;
-}
-
-.rodape-redes {
-  grid-auto-flow: column;
-  align-items: center;
-  gap: 14px;
+  gap: 18px;
 }
 
 .rodape-title,
@@ -51,7 +51,8 @@
 
 .rodape-formulario input {
   width: 100%;
-  padding: 16px 20px;
+  height: 52px;
+  padding: 0 22px;
   border-radius: 999px;
   border: 1px solid var(--footer-input-border);
   background: var(--footer-input);
@@ -63,18 +64,25 @@
   color: rgba(255, 255, 255, 0.65);
 }
 
+.rodape-redes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .social-icon {
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--footer-border);
+  background: transparent;
   color: var(--footer-text);
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .social-icon.instagram::before { content: 'I'; }
@@ -84,7 +92,7 @@
 
 .rodape-coluna ul {
   list-style: none;
-  margin: 16px 0 0;
+  margin: 18px 0 0;
   padding: 0;
   display: grid;
   gap: 12px;
@@ -96,21 +104,24 @@
   font-size: 0.95rem;
 }
 
-.rodape-coluna a:hover {
+.rodape-coluna ul li:first-child a {
   color: var(--footer-text);
+  font-weight: 700;
 }
 
 .rodape-separador {
   border: 0;
   height: 1px;
   background: var(--footer-border);
+  margin: 0 0 28px 0;
 }
 
 .rodape-credito {
   text-align: center;
   color: var(--footer-muted);
   font-size: 0.95rem;
-  padding-top: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 .sr-only {
