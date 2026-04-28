@@ -121,7 +121,7 @@
   text-align: center;
   color: var(--footer-muted);
   font-size: 0.95rem;
-  margin: 0;
+  margin: -12px;
   padding: 0;
 }
 
