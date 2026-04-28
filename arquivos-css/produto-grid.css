@@ -1,0 +1,42 @@
+/* produto-grid */
+
+.highlight {
+	grid-area: highlight;
+	background-color: rgb(212, 32, 101);
+}
+
+.sneaker-purple {
+	grid-area: sneaker-purple;
+	background-color: aquamarine;
+}
+
+.model {
+	grid-area: model;
+	background-color: blue;
+}
+
+.sneaker-color {
+	grid-area: sneaker-color;
+	background-color: brown;
+}
+
+.sneaker-white {
+	grid-area: sneaker-white;
+	background-color: cadetblue;
+}
+
+.sneaker-silver {
+	grid-area: sneaker-silver;
+	background-color: chartreuse;
+}
+
+.produtos-grid {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 300px);
+	display: grid;
+	grid-template-areas:
+		"highlight highlight sneaker-purple sneaker-purple"
+		"highlight highlight model sneaker-color"
+		"sneaker-white sneaker-white model sneaker-silver";
+	gap: 30px;
+}
