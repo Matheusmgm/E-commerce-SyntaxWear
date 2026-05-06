@@ -1,0 +1,89 @@
+/* layout.css - Layout responsivo */
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .hero-section {
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .hero-overlay {
+        padding: 0 2rem;
+        justify-content: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 20px !important;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .categories-section {
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .category-card {
+        width: 100%;
+        max-width: 317px;
+        height: 300px;
+    }
+
+    .grid-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "highlight"
+            "sneaker-purple"
+            "model"
+            "sneaker-color"
+            "sneaker-white"
+            "sneaker-silver";
+        gap: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-title {
+        font-size: 1.2rem !important;
+    }
+
+    .category-card {
+        height: 250px;
+    }
+
+    .btn {
+        width: 140px;
+        font-size: 1rem;
+    }
+}
