@@ -88,10 +88,29 @@
 	}
 }
 
+
 @media (max-width: 768px) {
-	.hero-section{
+	.hero-banner {
 		height: 660px;
-		background: url(../images/../images/card-imagem-responsivo.png);
+		background: url('../images/card-imagem-responsivo.png') no-repeat center !;
+		background-size: cover 
 	}
-	
+
+	.hero-overlay {
+		padding: 0;
+		max-width: 330px;
+		margin: 0 auto;
+	}
+
+	.hero-overlay .hero-title {
+		font-size: 1.5rem;
+	}
+
+	.hero-overlay .hero-subtitle {
+		font-size: 1.25rem;
+	}
+
+	.btn{
+		font-size: 1.2rem;
+	}
 }
