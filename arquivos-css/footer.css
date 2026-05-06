@@ -137,6 +137,12 @@
   border: 0;
 }
 
+.footer-copy{
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
 @media (max-width: 960px) {
   .rodape-topo {
     grid-template-columns: 1fr 1fr;

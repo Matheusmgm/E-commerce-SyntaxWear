@@ -87,3 +87,11 @@
 		transition: color 0.2s ease;
 	}
 }
+
+@media (max-width: 768px) {
+	.hero-section{
+		height: 660px;
+		background: url(../images/../images/card-imagem-responsivo.png);
+	}
+	
+}
